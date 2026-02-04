@@ -66,8 +66,10 @@ class HelloName(tk.Tk):
     def error_handler(self, error_message):
         try:
             messagebox.showerror("Error", error_message)  # ❗ Displaying the error message
+            #return True
         except Exception as e:
             print(f"Something went wrong: {e}")
+            #return False
     
     def presence_check(self, name):
         return bool(name)  # 🤔 Checking if name is present
